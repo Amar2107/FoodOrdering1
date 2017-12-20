@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorControlHighlight"
+    android:elevation="0dp">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN_UP FORM"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:id="@+id/TFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="NAME"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/TFpass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFname"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/TFpass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFpass1"
+        android:ems="10"
+        android:hint="CONF_PASS"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/TFemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFpass2"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/Bsignupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@android:color/holo_blue_dark"
+        android:elevation="0dp"
+        android:onClick="onSignupClick"
+        android:text="SIGN_UP"
+        tools:background="@android:color/holo_blue_dark" />
+
+    <EditText
+        android:id="@+id/TFusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFemail"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFmob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/TFusername"
+        android:layout_below="@+id/TFusername"
+        android:ems="10"
+        android:hint="MOBILE"
+        android:inputType="number" />
+
+</RelativeLayout>
